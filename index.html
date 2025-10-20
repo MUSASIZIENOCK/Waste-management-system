@@ -4,43 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Waste Management System</title>
+
+  <!-- External CSS -->
   <link rel="stylesheet" href="css/style.css" />
-  /* Ensure nav appears below the header */
-nav {
-  position: relative;       /* normal flow, not overlapping header */
-  z-index: 10;              /* stays on top of header if needed */
-  background-color: #2e7d32;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 20px;         /* add some space below header */
-}
 
-/* Inline list style */
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  margin: 0 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-</head>
-  <head>
-  <title>Waste Management Project</title>
+  <!-- Internal CSS -->
   <style>
+    /* Header with background image */
     header {
       position: relative;
       background-image: url('leafbg.jpg'); /* your downloaded leaf image */
@@ -65,25 +35,83 @@ nav ul li a:hover {
     }
 
     /* Text on top of overlay */
-    header h1, header p {
+    header h1, header nav {
       position: relative;
       z-index: 2;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
     }
-  </style>
-</head>
-  <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    img {
+
+    /* Navigation below header */
+    nav {
+      background-color: #2e7d32;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 0 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero section */
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #f0f4f8;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Features / cards section */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 50px 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .card img {
       max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2e7d32;
+      color: white;
     }
   </style>
-  <title>Waste Management</title>
 </head>
+
 <body>
   <header>
     <h1>Waste Management System</h1>
